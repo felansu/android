@@ -2,9 +2,11 @@ package com.example.trabalho1;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -37,6 +39,8 @@ public class MostrarDados extends Activity {
 	}
 	
 	public void verificacao(View view){
+		Vibrator v = (Vibrator) getBaseContext().getSystemService(Context.VIBRATOR_SERVICE);
+		v.vibrate(500);
 		validaCampos();
 		abreDialogo();
 

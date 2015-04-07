@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvNomeProcedimento" android:layout_gravity="center_horizontal"
+            android:text="Nome do procedimento:"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNomeProcedimento"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/tvData"
+              android:text="Data:"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/etData"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/tvValor"
+              android:text="Valor:"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/etValor"
+            android:numeric="decimal"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/tvMedico"
+              android:text="Médico:"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/etMedico"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:id="@+id/btnEnviar" android:layout_gravity="center_horizontal"
+            android:onClick="enviar"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Limpar"
+            android:id="@+id/btnLimpar" android:layout_gravity="center_horizontal" android:onClick="limpar"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:id="@+id/btnSair" android:layout_gravity="center_horizontal"
+            android:onClick="sair"/>
+</LinearLayout>
+
